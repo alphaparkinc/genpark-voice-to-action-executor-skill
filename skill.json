@@ -1,0 +1,31 @@
+{
+  "name": "genpark-voice-to-action-executor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Zero-latency voice command to structured API action converter.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "voice",
+    "dictation",
+    "action",
+    "automation"
+  ],
+  "inputs": {
+    "voice_transcript": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "action_type": {
+      "type": "string"
+    },
+    "action_payload": {
+      "type": "object"
+    },
+    "confidence": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
